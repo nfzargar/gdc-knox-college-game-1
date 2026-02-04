@@ -15,6 +15,7 @@ controls = ExtResource("2_dqkch")
 shape = SubResource("RectangleShape2D_dqkch")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+use_parent_material = true
 position = Vector2(-2, 0)
 scale = Vector2(0.210938, 0.210938)
 texture = ExtResource("2_qhqgy")
