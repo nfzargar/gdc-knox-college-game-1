@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="PlayerControls" load_steps=2 format=3 uid="uid://dit41qrlcikcl"]
+
+[ext_resource type="Script" uid="uid://bakp3e3ljyyog" path="res://resources/player_controls.gd" id="1_oce8c"]
+
+[resource]
+script = ExtResource("1_oce8c")
+index = 0
+up = "player2_up"
+down = "player2_down"
+left = "player2_left"
+right = "player2_right"
+metadata/_custom_type_script = "uid://bakp3e3ljyyog"
