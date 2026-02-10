@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://cqub3kss6l5yv"]
+
+[ext_resource type="Texture2D" uid="uid://b18stqbd342co" path="res://art-assets/bg-assets/3 Objects/Leaf/1.png" id="1_lca2k"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7kyaj"]
+size = Vector2(45, 20)
+
+[node name="AnimatableBody2D" type="AnimatableBody2D"]
+position = Vector2(0, -1)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_lca2k")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D"]
+position = Vector2(0.5, 0)
+shape = SubResource("RectangleShape2D_7kyaj")
+
+[node name="AnimationTree" type="AnimationTree" parent="Sprite2D"]

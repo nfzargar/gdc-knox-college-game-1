@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://ycl82ib0vlvv"]
+
+[ext_resource type="Texture2D" uid="uid://dmld105klwaci" path="res://art-assets/bg-assets/3 Objects/Bushes/16.png" id="1_xui4b"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7kyaj"]
+size = Vector2(45, 20)
+
+[node name="AnimatableBody2D" type="AnimatableBody2D"]
+position = Vector2(1, -5)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_xui4b")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D"]
+position = Vector2(0.5, 0)
+shape = SubResource("RectangleShape2D_7kyaj")
