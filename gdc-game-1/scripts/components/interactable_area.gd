@@ -8,11 +8,14 @@ class_name InteractableArea
 @export var show_prompt = true
 @export var one_shot = false
 @export var disabled = false
+## Press and hold to keep this area activated
+@export var holdable = false
 @export var sound : AudioStream
 var is_inside = false
 var activated_since_entering = false
 
 signal activated
+signal deactivated
 signal entered
 signal exited
 
@@ -35,3 +38,7 @@ func activate():
 			$AudioStreamPlayer2D.play()
 		activated_since_entering = true
 		activated.emit()
+
+func deactivate():
+	deactivated.emit()
+	activated_since_entering = false

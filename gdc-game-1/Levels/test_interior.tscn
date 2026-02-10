@@ -1,12 +1,16 @@
-[gd_scene load_steps=6 format=4 uid="uid://ooqt5l75jc7g"]
+[gd_scene load_steps=8 format=4 uid="uid://ooqt5l75jc7g"]
 
 [ext_resource type="TileSet" uid="uid://da8pvefcrqusu" path="res://resources/test_tileset.tres" id="1_2jxoa"]
 [ext_resource type="PackedScene" uid="uid://62m5fegyk3pi" path="res://scenes/player.tscn" id="2_o4cqn"]
 [ext_resource type="Resource" uid="uid://dit41qrlcikcl" path="res://resources/player_controls2.tres" id="3_6yo3q"]
 [ext_resource type="Shader" uid="uid://cn2pgwqtc2t3d" path="res://resources/please_humor_me.gdshader" id="3_tkuid"]
+[ext_resource type="PackedScene" uid="uid://b36qixguf6pgk" path="res://scripts/components/robot_action_area.tscn" id="5_tkuid"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_p3xmn"]
 shader = ExtResource("3_tkuid")
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_p3xmn"]
+size = Vector2(106, 187)
 
 [node name="Node2D" type="Node2D"]
 
@@ -31,3 +35,26 @@ offset_top = -516.0
 offset_right = 1459.0
 offset_bottom = 467.0
 color = Color(0.0900352, 0.0890934, 0.194953, 1)
+
+[node name="RobotActionArea" parent="." instance=ExtResource("5_tkuid")]
+action = "robot_left"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RobotActionArea"]
+position = Vector2(366, -82.5)
+shape = SubResource("RectangleShape2D_p3xmn")
+
+[node name="RobotActionArea2" parent="." instance=ExtResource("5_tkuid")]
+position = Vector2(448, 0)
+action = "robot_right"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RobotActionArea2"]
+position = Vector2(366, -82.5)
+shape = SubResource("RectangleShape2D_p3xmn")
+
+[node name="RobotActionArea3" parent="." instance=ExtResource("5_tkuid")]
+position = Vector2(256, 192)
+action = "robot_up"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RobotActionArea3"]
+position = Vector2(366, -82.5)
+shape = SubResource("RectangleShape2D_p3xmn")

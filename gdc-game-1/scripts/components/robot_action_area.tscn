@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://b36qixguf6pgk"]
+
+[ext_resource type="Script" uid="uid://dtpido1g5pqu8" path="res://robot_action_area.gd" id="1_esvrj"]
+
+[node name="RobotActionArea" type="Area2D"]
+script = ExtResource("1_esvrj")
+holdable = true
+metadata/_custom_type_script = "uid://btkmi6agxqimm"
+
+[connection signal="deactivated" from="." to="." method="_on_deactivated"]
