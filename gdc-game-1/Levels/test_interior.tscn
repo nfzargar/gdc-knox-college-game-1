@@ -10,7 +10,7 @@
 shader = ExtResource("3_tkuid")
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_p3xmn"]
-size = Vector2(106, 187)
+size = Vector2(182, 187)
 
 [node name="Node2D" type="Node2D"]
 
@@ -40,7 +40,7 @@ color = Color(0.0900352, 0.0890934, 0.194953, 1)
 action = "robot_left"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="RobotActionArea"]
-position = Vector2(366, -82.5)
+position = Vector2(334, -83)
 shape = SubResource("RectangleShape2D_p3xmn")
 
 [node name="RobotActionArea2" parent="." instance=ExtResource("5_tkuid")]
@@ -48,7 +48,7 @@ position = Vector2(448, 0)
 action = "robot_right"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="RobotActionArea2"]
-position = Vector2(366, -82.5)
+position = Vector2(398, -82)
 shape = SubResource("RectangleShape2D_p3xmn")
 
 [node name="RobotActionArea3" parent="." instance=ExtResource("5_tkuid")]
@@ -56,5 +56,5 @@ position = Vector2(256, 192)
 action = "robot_up"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="RobotActionArea3"]
-position = Vector2(366, -82.5)
+position = Vector2(369, -82.5)
 shape = SubResource("RectangleShape2D_p3xmn")

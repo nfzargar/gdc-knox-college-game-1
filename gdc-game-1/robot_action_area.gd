@@ -6,7 +6,7 @@ extends InteractableArea
 func _process(delta: float) -> void:
 	if(activated_since_entering):
 		Input.action_press(action)
-	else:
+	elif(Input.is_action_pressed(action)):
 		Input.action_release(action)
 
 
