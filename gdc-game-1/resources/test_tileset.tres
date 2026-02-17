@@ -1,4 +1,4 @@
-[gd_resource type="TileSet" load_steps=5 format=3 uid="uid://da8pvefcrqusu"]
+[gd_resource type="TileSet" load_steps=13 format=3 uid="uid://da8pvefcrqusu"]
 
 [ext_resource type="Texture2D" uid="uid://dqxbinmwrqnbe" path="res://art-assets/bg-assets/Tileset.png" id="1_w42bm"]
 [ext_resource type="Texture2D" uid="uid://c10wl41cyxp1d" path="res://Pixel Art Platformer - Village Props v2.3.0/Texture/TX Tileset Ground.png" id="2_u4yon"]
@@ -6,7 +6,6 @@
 [ext_resource type="Texture2D" uid="uid://xc1aefvc47mw" path="res://Pixel Art Platformer - Village Props v2.3.0/Texture/TX FX Flame.png" id="4_e80ut"]
 [ext_resource type="Texture2D" uid="uid://58lyewwsrj4o" path="res://Pixel Art Platformer - Village Props v2.3.0/Texture/TX FX Torch Flame.png" id="5_73md3"]
 [ext_resource type="Texture2D" uid="uid://b8ucalto8ralu" path="res://Pixel Art Platformer - Village Props v2.3.0/Texture/TX Village Props.png" id="6_h75jt"]
-[ext_resource type="Texture2D" uid="uid://cnr0uwts20auq" path="res://art-assets/bg-assets/3 Objects/Other/Tree1.png" id="2_u4yon"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_rwk2t"]
 texture = ExtResource("1_w42bm")
