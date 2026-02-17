@@ -11,8 +11,11 @@ func _process(delta: float) -> void:
 		_deactivate_interactive_areas()
 	var areas_inside = false
 	for area in get_overlapping_areas():
-		if(area is InteractableArea && area.show_prompt && !area.activated_since_entering):
-			areas_inside = true
+		if(area is InteractableArea):
+			if(area.show_prompt && !area.activated_since_entering):
+				areas_inside = true
+			if(!area.is_inside):
+				area.enter()
 
 func _activate_interactive_areas():
 	for area in get_overlapping_areas():
