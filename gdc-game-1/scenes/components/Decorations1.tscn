@@ -1,0 +1,44 @@
+[gd_scene load_steps=7 format=3 uid="uid://cntj04xe5eh2h"]
+
+[ext_resource type="Texture2D" uid="uid://blrp1mhcc6fcd" path="res://Ant Sprites/Grub_Lazy-Sheet.png" id="1_ubck0"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3158n"]
+atlas = ExtResource("1_ubck0")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ub4j8"]
+atlas = ExtResource("1_ubck0")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pvdih"]
+atlas = ExtResource("1_ubck0")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7e6fp"]
+atlas = ExtResource("1_ubck0")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_vwub0"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3158n")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ub4j8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pvdih")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7e6fp")
+}],
+"loop": true,
+"name": &"default",
+"speed": 2.0
+}]
+
+[node name="GrubLazy" type="AnimatedSprite2D"]
+position = Vector2(507, 22)
+sprite_frames = SubResource("SpriteFrames_vwub0")
+autoplay = "default"
