@@ -88,6 +88,7 @@ animations = [{
 size = Vector2(25, 33.75)
 
 [node name="Player" type="CharacterBody2D"]
+z_index = 5
 collision_layer = 2
 script = ExtResource("1_g2els")
 controls = ExtResource("2_dqkch")

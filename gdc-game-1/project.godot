@@ -78,6 +78,10 @@ robot_right={
 "events": []
 }
 
+[input_devices]
+
+sensors/enable_gravity=true
+
 [layer_names]
 
 2d_physics/layer_1="ground"
