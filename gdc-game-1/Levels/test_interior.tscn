@@ -38,7 +38,6 @@ color = Color(0.0900352, 0.0890934, 0.194953, 1)
 
 [node name="RobotActionArea" parent="." instance=ExtResource("5_tkuid")]
 action = "robot_left"
-automatic = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="RobotActionArea"]
 position = Vector2(316, -77)
@@ -47,7 +46,6 @@ shape = SubResource("RectangleShape2D_p3xmn")
 [node name="RobotActionArea2" parent="." instance=ExtResource("5_tkuid")]
 position = Vector2(448, 0)
 action = "robot_right"
-automatic = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="RobotActionArea2"]
 position = Vector2(398, -82)
@@ -57,6 +55,7 @@ shape = SubResource("RectangleShape2D_p3xmn")
 position = Vector2(256, 192)
 action = "robot_up"
 automatic = true
+holdable = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="RobotActionArea3"]
 position = Vector2(369, -82.5)

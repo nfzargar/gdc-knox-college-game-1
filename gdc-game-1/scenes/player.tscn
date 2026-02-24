@@ -7,6 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://d0x22chjrypvt" path="res://Ant Sprites/Tank_Run-Sheet.png" id="4_qlg0r"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_dqkch"]
+size = Vector2(20, 28)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_qlg0r"]
 atlas = ExtResource("3_dqkch")
@@ -64,7 +65,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"idle",
-"speed": 12.0
+"speed": 6.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -89,11 +90,13 @@ size = Vector2(25, 33.75)
 
 [node name="Player" type="CharacterBody2D"]
 z_index = 5
+scale = Vector2(1.5, 1.5)
 collision_layer = 2
 script = ExtResource("1_g2els")
 controls = ExtResource("2_dqkch")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 4)
 shape = SubResource("RectangleShape2D_dqkch")
 
 [node name="Sprite2D" type="AnimatedSprite2D" parent="."]
@@ -103,8 +106,6 @@ scale = Vector2(0.300782, 0.300782)
 sprite_frames = SubResource("SpriteFrames_y4r1p")
 animation = &"run"
 autoplay = "idle"
-frame = 1
-frame_progress = 0.901807
 
 [node name="InteractionArea" parent="." instance=ExtResource("4_dqkch")]
 
