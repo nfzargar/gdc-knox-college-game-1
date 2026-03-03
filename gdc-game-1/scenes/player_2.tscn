@@ -1,0 +1,70 @@
+[gd_scene load_steps=12 format=3 uid="uid://b2ekmx62dbk8i"]
+
+[ext_resource type="Script" uid="uid://c2b0eq2t8rkt8" path="res://scripts/player.gd" id="1_oc1kf"]
+[ext_resource type="Resource" uid="uid://ciybxfhkwtxmx" path="res://resources/player_controls1.tres" id="2_0mr0g"]
+[ext_resource type="Texture2D" uid="uid://wfnn65y2wkl4" path="res://Ant Sprites/Soldier_ant-Sheet.png" id="3_v7tvf"]
+[ext_resource type="PackedScene" uid="uid://dhkp26ce86on4" path="res://scenes/components/interaction_area.tscn" id="4_povjg"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dqkch"]
+size = Vector2(20, 28)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hkoe6"]
+atlas = ExtResource("3_v7tvf")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ne6jw"]
+atlas = ExtResource("3_v7tvf")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_b2c7a"]
+atlas = ExtResource("3_v7tvf")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_x4ukj"]
+atlas = ExtResource("3_v7tvf")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_t4bc4"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hkoe6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ne6jw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_b2c7a")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_x4ukj")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qlg0r"]
+size = Vector2(25, 33.75)
+
+[node name="Player2" type="CharacterBody2D"]
+z_index = 5
+scale = Vector2(1.25, 1.25)
+collision_layer = 2
+script = ExtResource("1_oc1kf")
+controls = ExtResource("2_0mr0g")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 4)
+shape = SubResource("RectangleShape2D_dqkch")
+
+[node name="Sprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(1, 1)
+sprite_frames = SubResource("SpriteFrames_t4bc4")
+autoplay = "default"
+
+[node name="InteractionArea" parent="." instance=ExtResource("4_povjg")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InteractionArea"]
+position = Vector2(0, 1.125)
+shape = SubResource("RectangleShape2D_qlg0r")
