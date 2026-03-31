@@ -1,10 +1,36 @@
-[gd_scene load_steps=2 format=3 uid="uid://b36qixguf6pgk"]
+[gd_scene load_steps=6 format=3 uid="uid://b36qixguf6pgk"]
 
 [ext_resource type="Script" uid="uid://dtpido1g5pqu8" path="res://robot_action_area.gd" id="1_esvrj"]
+[ext_resource type="Texture2D" uid="uid://bt1vf4rrj7efn" path="res://Ant Sprites/Button2-Sheet.png" id="2_compc"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ygbdw"]
+atlas = ExtResource("2_compc")
+region = Rect2(0, 0, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uhtha"]
+atlas = ExtResource("2_compc")
+region = Rect2(96, 0, 96, 96)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_r3eb3"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ygbdw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uhtha")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
 
 [node name="RobotActionArea" type="Area2D"]
 script = ExtResource("1_esvrj")
 holdable = true
 metadata/_custom_type_script = "uid://btkmi6agxqimm"
+
+[node name="Sprite" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_r3eb3")
 
 [connection signal="deactivated" from="." to="." method="_on_deactivated"]
