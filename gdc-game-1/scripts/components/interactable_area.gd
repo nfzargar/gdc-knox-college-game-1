@@ -20,7 +20,6 @@ signal entered
 signal exited
 
 func enter():
-	print_debug("hi!")
 	is_inside = true
 	entered.emit()
 	if(automatic && (!activated_since_entering || !one_shot) && !disabled):
