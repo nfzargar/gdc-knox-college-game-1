@@ -1,6 +1,6 @@
-[gd_scene load_steps=3 format=4 uid="uid://bwaamhtehoxr6"]
+[gd_scene load_steps=3 format=4 uid="uid://cnofuh6q8ipp4"]
 
-[ext_resource type="PackedScene" uid="uid://cov34jtuey02" path="res://Levels/interior_base.tscn" id="1_8ex76"]
+[ext_resource type="PackedScene" uid="uid://c6lm0fhlfq0dr" path="res://Levels/interior_base.tscn" id="1_8ex76"]
 [ext_resource type="TileSet" uid="uid://da8pvefcrqusu" path="res://resources/test_tileset.tres" id="2_ddw3n"]
 
 [node name="InteriorBase" instance=ExtResource("1_8ex76")]
@@ -12,4 +12,4 @@ tile_set = ExtResource("2_ddw3n")
 
 [node name="Camera2D" type="Camera2D" parent="." index="6"]
 position = Vector2(424, -30.2267)
-zoom = Vector2(2, 2)
+zoom = Vector2(1.1, 1.1)
