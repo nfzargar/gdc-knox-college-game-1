@@ -12,7 +12,7 @@
 [ext_resource type="Texture2D" uid="uid://b8ucalto8ralu" path="res://Pixel Art Platformer - Village Props v2.3.0/Texture/TX Village Props.png" id="6_ouwm7"]
 [ext_resource type="Texture2D" uid="uid://ceumnr46dftdw" path="res://art-assets/sewer/tilesetSewer.png" id="7_662sx"]
 [ext_resource type="Texture2D" uid="uid://cjuj1hopc6kpv" path="res://art-assets/cloudy_sky.png" id="12_lx7qo"]
-[ext_resource type="PackedScene" path="res://scenes/metalScrap.tscn" id="13_dkv23"]
+[ext_resource type="PackedScene" uid="uid://ccbdm1upg7nbj" path="res://scenes/metalScrap.tscn" id="13_dkv23"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_cn5b1"]
 texture = ExtResource("1_k8b6b")
