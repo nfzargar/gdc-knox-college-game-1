@@ -24,7 +24,7 @@ stretch = true
 
 [node name="LevelViewport" type="SubViewport" parent="HBoxContainer/SubViewportContainer"]
 handle_input_locally = false
-size = Vector2i(574, 648)
+size = Vector2i(2, 2)
 render_target_update_mode = 4
 
 [node name="SubViewportContainer2" type="SubViewportContainer" parent="HBoxContainer"]
@@ -34,7 +34,7 @@ stretch = true
 
 [node name="InteriorViewport" type="SubViewport" parent="HBoxContainer/SubViewportContainer2"]
 handle_input_locally = false
-size = Vector2i(574, 648)
+size = Vector2i(2, 2)
 render_target_update_mode = 4
 
 [node name="Node2D" parent="HBoxContainer/SubViewportContainer2/InteriorViewport" instance=ExtResource("2_glms7")]
