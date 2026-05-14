@@ -51,7 +51,6 @@ color = Color(0.0900352, 0.0890934, 0.194953, 1)
 position = Vector2(420, -63.685)
 scale = Vector2(1, 0.7)
 action = "robot_left"
-automatic = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="RobotActionArea"]
 position = Vector2(-0.5, 11.185)
@@ -61,7 +60,6 @@ shape = SubResource("RectangleShape2D_p3xmn")
 position = Vector2(712.122, -59.3297)
 scale = Vector2(1, 0.8)
 action = "robot_right"
-automatic = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="RobotActionArea2"]
 shape = SubResource("RectangleShape2D_p3xmn")

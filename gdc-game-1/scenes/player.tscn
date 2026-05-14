@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=3 uid="uid://62m5fegyk3pi"]
+[gd_scene load_steps=18 format=3 uid="uid://bwp8x4myucjdk"]
 
 [ext_resource type="Script" uid="uid://c2b0eq2t8rkt8" path="res://scripts/player.gd" id="1_g2els"]
 [ext_resource type="Resource" uid="uid://ciybxfhkwtxmx" path="res://resources/player_controls1.tres" id="2_dqkch"]
@@ -100,7 +100,7 @@ position = Vector2(0, 4)
 shape = SubResource("RectangleShape2D_dqkch")
 
 [node name="Sprite2D" type="AnimatedSprite2D" parent="."]
-[node name="Sprite2D" type="AnimatedSprite2D" parent="."]
+z_index = 10
 use_parent_material = true
 position = Vector2(-4.76837e-07, 4.76837e-07)
 scale = Vector2(0.300782, 0.300782)
