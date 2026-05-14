@@ -2052,3 +2052,4 @@ centered = false
 
 [node name="Node2D" parent="." instance=ExtResource("13_dkv23")]
 position = Vector2(2443, -624)
+level = "res://Levels/test_level2.tscn"
